@@ -16,6 +16,9 @@ jobs:
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v2
 
+    - name: Secrets Scanner
+      uses: secret-scanner/action@0.2.1
+
     - name: Terraform fmt
       id: fmt
       run: terraform fmt -check
